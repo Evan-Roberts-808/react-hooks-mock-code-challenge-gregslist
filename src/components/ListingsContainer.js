@@ -4,7 +4,7 @@ import ListingCard from "./ListingCard";
 function ListingsContainer({ listings, onDelete, sort }) {
 
   const listingsList = sort 
-  ? [...listings].sort((a, b) => a.description.localeCompare(b.description))
+  ? [...listings].sort((a, b) => a.location.localeCompare(b.location))
   :listings
 
   return (
